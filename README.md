@@ -20,6 +20,7 @@ The goal for me when choosing this stack was to practice and deepen learned skil
 
 to run client:
 `cd client`
+
 `npm start`
 
 ## How to use (features)
