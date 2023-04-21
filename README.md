@@ -19,6 +19,7 @@ The goal for me when choosing this stack was to practice and deepen learned skil
 ## How to install and run the project
 
 to run client:
+
 `cd client`
 
 `npm start`
