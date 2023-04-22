@@ -20,7 +20,7 @@ The goal for me when choosing this stack was to practice and deepen learned skil
 
 to run client:
 
-[see link here](https://github.com/akaomy/iheartmytravel/blob/main/README.md)
+[see link here](https://github.com/akaomy/iheartmytravel/blob/main/clientapp/README.md)
 
 ## How to use (features)
 
