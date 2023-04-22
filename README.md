@@ -20,9 +20,7 @@ The goal for me when choosing this stack was to practice and deepen learned skil
 
 to run client:
 
-`cd client`
-
-`npm start`
+[see link here](https://github.com/akaomy/iheartmytravel/tree/main/front)
 
 ## How to use (features)
 
