@@ -5,12 +5,12 @@ import { ListItemButton, ListItemText, ImageListItem, Container } from '@mui/mat
 
 export default function JourneysListItem () {
     return (
-        <Container>
+        <Container maxWidth="md">
             <ListItemButton component="a" href="#simple-list">
                 <ImageListItem>
                     <img src='https://placehold.co/100x100' alt=''/>
                 </ImageListItem>
-                <Container>
+                <Container maxWidth="md">
                     <ListItemText>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
                         eiusmod tempor incididunt ut labore et dolore magna aliqua. 
