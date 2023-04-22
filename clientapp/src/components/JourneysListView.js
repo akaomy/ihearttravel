@@ -3,13 +3,18 @@
 import React from 'react';
 import JourneysListItem from './JourneyListItem';
 
-export default function JourneysListView () {
+const JourneysListView  = ({data}) => {
+    console.log(data.user.journals)
+    
     return (
         <>
+        {/* TODO */}
+        {/* {data.user.journals.map((i) => { */}
             <JourneysListItem />
-            <JourneysListItem />
-            <JourneysListItem />
-            <JourneysListItem />
+        {/* })} */}
         </>
     );
 }
+
+
+export default JourneysListView;

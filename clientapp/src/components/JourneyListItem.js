@@ -3,7 +3,7 @@
 import React from 'react';
 import { ListItemButton, ListItemText, ImageListItem, Container } from '@mui/material';
 
-export default function JourneysListItem () {
+ const JourneysListItem = () => {
     return (
         <Container maxWidth="md">
             <ListItemButton component="a" href="#simple-list">
@@ -21,3 +21,5 @@ export default function JourneysListItem () {
         </Container>
         );
 }
+
+export default JourneysListItem;
