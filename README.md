@@ -22,7 +22,9 @@ The goal for me when choosing this stack was to practice and deepen learned skil
 
 ## How to install and run the project
 
-TBD
+to run client:
+`cd client`
+`npm start`
 
 ## How to use (features)
 
