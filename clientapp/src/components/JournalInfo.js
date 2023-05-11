@@ -1,10 +1,9 @@
 import React from 'react';
 
- const JournalInfo = () => {
-    console.log('journal info');
+ const JournalInfo = ({ info }) => {
     return (
         <p>
-            journal info
+            journal info: {info}
         </p>
         );
 }
