@@ -1,5 +1,7 @@
 import './App.css';
-import JourneysListView from './components/JourneysListView';
+import JournalListView from './components/JournalListView';
+import { BrowserRouter as Router } from 'react-router-dom';
+
 
 const dummy_data = {
   "user": {
@@ -112,13 +114,20 @@ const dummy_data = {
     ]
   }
 }
+
+const dummy_data_journals = {
+  
+}
       
 function App() {
   return (
-    <div className="App">
-      <h1>IHEART MY TRAVEL</h1>
-      <JourneysListView data={dummy_data}/>
-    </div>
+    <Router>
+      <div className="App">
+          <h1>IHEART MY TRAVEL</h1>
+          <JournalListView data={dummy_data}/>
+      </div>
+    </Router>
+
   );
 }
 
