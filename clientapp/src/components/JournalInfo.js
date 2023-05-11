@@ -3,7 +3,7 @@ import React from 'react';
  const JournalInfo = ({ info }) => {
     return (
         <p>
-            journal info: {info}
+            {info.journal_name}
         </p>
         );
 }

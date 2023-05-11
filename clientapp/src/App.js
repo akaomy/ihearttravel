@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom';
 import JournalListView from './components/JournalListView';
 import JournalInfo from './components/JournalInfo';
 
+
 const dummy_data = {
   "user": {
     "journals": [
@@ -115,20 +116,23 @@ const dummy_data = {
   }
 }
 
+const uniqueId = () => parseInt(Date.now() * Math.random()).toString();
+
 const router = createBrowserRouter([
   { path: '/', element: <JournalListView data={dummy_data} /> }
 ])
 
 dummy_data.user.journals.map((journal) => 
   router.routes.push({
+    id: uniqueId(),
     path: `${journal.journal_name}`,
-    element:  <JournalInfo info={journal.journal_info}/>,
+    element:  <JournalInfo info={journal}/>,
   }))
       
 function App() {
   // why double amount of items in the router.routes array?
   console.log(router.routes.push({path: 'test', element: <JournalInfo info='test info'/>}))
-  console.log(router.routes)
+  console.log(router.routes)      
   return (
     <>
       <h1>i heart my travel</h1>
