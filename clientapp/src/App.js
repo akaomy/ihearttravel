@@ -1,5 +1,5 @@
 import './App.css';
-import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import JournalListView from './components/JournalListView';
 import JournalInfo from './components/JournalInfo';
 
@@ -130,9 +130,6 @@ dummy_data.user.journals.map((journal) =>
   }))
       
 function App() {
-  // why double amount of items in the router.routes array?
-  console.log(router.routes.push({path: 'test', element: <JournalInfo info='test info'/>}))
-  console.log(router.routes)      
   return (
     <>
       <h1>i heart my travel</h1>
