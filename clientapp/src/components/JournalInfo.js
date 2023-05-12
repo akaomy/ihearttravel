@@ -1,11 +1,13 @@
 import React from 'react';
+import JournalTabs from './JournalTabs';
 
- const JournalInfo = ({ info }) => {
+const JournalInfo = ({ info }) => {
     return (
-        <p>
-            {info.journal_name}
-        </p>
-        );
+        <>
+           <h2>{info.journal_name}</h2>
+           <JournalTabs />
+        </>
+    );
 }
 
 export default JournalInfo;
