@@ -3,6 +3,8 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import JournalTodos from './JournalTodos';
+
 
 const TabPanel = props => {
     const { children, value, index, ...other } = props;
@@ -39,11 +41,11 @@ const JournalTabs = () => {
                     value={value} 
                     onChange={handleChange} 
                 >
-                    <Tab label="Item One" />
+                    <Tab label="Todo:" />
                     <Tab label="Item Two" />
                 </Tabs>
                 <TabPanel value={value} index={0}>
-                    Item One
+                    <JournalTodos/>
                 </TabPanel>
                 <TabPanel value={value} index={1}>
                     Item Two
