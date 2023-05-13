@@ -11,18 +11,55 @@ const dummy_data = {
         "journal_name": "Eurotrip for 1 week, may 2021",
         "journal_info": [
           {
-            "todo": [
+            "todos": [
               {
-                "done": "true",
-                "todo_item": "one"
+                "card_name": "Camping Gear",
+                "card_content": [
+                  {
+                    "done": "false",
+                    "item_name": "tent"
+                  },
+                  {
+                    "done": "false",
+                    "item_name": "mats"
+                  },
+                  {
+                    "done": "false",
+                    "item_name": "sleeping bags"
+                  }
+                ],
+                "card_copy": "false",
+                "card_delete": "false"
               },
               {
-                "done": "false",
-                "todo_item": "two"
+                "card_name": "Clothes",
+                "card_content": [
+                  {
+                    "done": "false",
+                    "item_name": "jackets"
+                  },
+                  {
+                    "done": "false",
+                    "item_name": "underwear"
+                  },
+                  {
+                    "done": "false",
+                    "item_name": "pants"
+                  }
+                ],
+                "card_copy": "false",
+                "card_delete": "false"
               },
               {
-                "done": "false",
-                "todo_item": "three"
+                "card_name": "Tickets",
+                "card_content": [
+                  {
+                    "done": "false",
+                    "item_name": "link to the email with tickets to yousemite"
+                  }
+                ],
+                "card_copy": "false",
+                "card_delete": "false"
               }
             ],
             "map": [
