@@ -3,7 +3,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import JournalTodos from './JournalTodos';
+import JournalTodos from './todo/TodoBoard';
 
 
 const TabPanel = props => {
