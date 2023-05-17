@@ -13,6 +13,7 @@ const dummy_data = {
           {
             "todos": [
               {
+                "card_id": "98345mjk",
                 "card_name": "Camping Gear",
                 "card_content": [
                   {
@@ -32,6 +33,7 @@ const dummy_data = {
                 "card_delete": "false"
               },
               {
+                "card_id": "86sdf",
                 "card_name": "Clothes",
                 "card_content": [
                   {
@@ -51,6 +53,7 @@ const dummy_data = {
                 "card_delete": "false"
               },
               {
+                "card_id": "342gfdg",
                 "card_name": "Tickets",
                 "card_content": [
                   {

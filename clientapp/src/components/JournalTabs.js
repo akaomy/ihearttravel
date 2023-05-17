@@ -3,7 +3,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import JournalTodos from './todo/TodoBoard';
+import TodoBoard from './todo/TodoBoard';
 
 
 const TabPanel = props => {
@@ -45,7 +45,7 @@ const JournalTabs = () => {
                     <Tab label="Item Two" />
                 </Tabs>
                 <TabPanel value={value} index={0}>
-                    <JournalTodos/>
+                    <TodoBoard/>
                 </TabPanel>
                 <TabPanel value={value} index={1}>
                     Item Two

@@ -6,15 +6,15 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
 
-export default function TodoCard () {
+export default function TodoCard ({ cardName, cardContent }) {
     return (
         <Card sx={{ maxWidth: 345 }}>
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                    Camping Gear
+                    {cardName}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                    Content goes here
+                    {cardContent}
                 </Typography>
             </CardContent>
             <CardActions>
