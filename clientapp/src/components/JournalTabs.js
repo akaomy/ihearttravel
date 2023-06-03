@@ -4,6 +4,7 @@ import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import TodoBoard from './todo/TodoBoard';
+import Map from './map/Map';
 
 
 const TabPanel = props => {
@@ -41,14 +42,14 @@ const JournalTabs = () => {
                     value={value} 
                     onChange={handleChange} 
                 >
-                    <Tab label="Todo:" />
-                    <Tab label="Item Two" />
+                    <Tab label="Todo" />
+                    <Tab label="Map" />
                 </Tabs>
                 <TabPanel value={value} index={0}>
                     <TodoBoard/>
                 </TabPanel>
                 <TabPanel value={value} index={1}>
-                    Item Two
+                    <Map />
                 </TabPanel>
             </Box>
         </>
