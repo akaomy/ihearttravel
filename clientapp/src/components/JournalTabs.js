@@ -7,6 +7,12 @@ import TodoBoard from './todo/TodoBoard';
 import Map from './map/Map';
 
 
+const location = {
+    address: '1600 Amphitheatre Parkway, Mountain View, california.',
+    lat: 37.42216,
+    lng: -122.08427,
+}
+
 const TabPanel = props => {
     const { children, value, index, ...other } = props;
 
@@ -49,7 +55,10 @@ const JournalTabs = () => {
                     <TodoBoard/>
                 </TabPanel>
                 <TabPanel value={value} index={1}>
-                    <Map />
+                    <Map 
+                        location={location}
+                        zoomLevel={17}
+                    />
                 </TabPanel>
             </Box>
         </>
