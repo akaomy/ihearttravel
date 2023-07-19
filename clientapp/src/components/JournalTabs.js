@@ -4,7 +4,14 @@ import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import TodoBoard from './todo/TodoBoard';
+import Map from './map/Map';
 
+
+const location = {
+    address: '1600 Amphitheatre Parkway, Mountain View, california.',
+    lat: 37.42216,
+    lng: -122.08427,
+}
 
 const TabPanel = props => {
     const { children, value, index, ...other } = props;
@@ -41,14 +48,17 @@ const JournalTabs = () => {
                     value={value} 
                     onChange={handleChange} 
                 >
-                    <Tab label="Todo:" />
-                    <Tab label="Item Two" />
+                    <Tab label="Todo" />
+                    <Tab label="Map" />
                 </Tabs>
                 <TabPanel value={value} index={0}>
                     <TodoBoard/>
                 </TabPanel>
                 <TabPanel value={value} index={1}>
-                    Item Two
+                    <Map 
+                        location={location}
+                        zoomLevel={17}
+                    />
                 </TabPanel>
             </Box>
         </>
