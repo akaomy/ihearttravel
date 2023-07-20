@@ -26,7 +26,7 @@ const JournalListView  = ({data}) => {
             )}
         </Container>
     );
-}
+};
 
 
 export default JournalListView;

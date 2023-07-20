@@ -1,4 +1,4 @@
-import React, { useContext, createContext } from 'react';
+import React, { useContext } from 'react';
 import TodoCard from './TodoCard';
 import Grid from '@mui/material/Grid';
 import CustomButton from '../uiReusables/CustomButton';
@@ -22,15 +22,15 @@ export default function TodoBoard () {
             <CustomButton btnText={'+'}/>
             <Grid container spacing={4}>
                 {cardInfo.journal_info[0].todos.map(i => 
-                        <Grid item xs={12} sm={4} md={3}>
-                            <TodoCard
-                                key={i.card_id}
-                                cardName={i.card_name}
-                                // cardContent={i.card_content}
-                            />
-                        </Grid>
+                    <Grid item xs={12} sm={4} md={3}>
+                        <TodoCard
+                            key={i.card_id}
+                            cardName={i.card_name}
+                            // cardContent={i.card_content}
+                        />
+                    </Grid>
                 )}
             </Grid>
         </StyledContainer>
-    )
+    );
 }

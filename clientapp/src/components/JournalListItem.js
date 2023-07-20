@@ -12,21 +12,21 @@ const StyledContainer = styled(Container)(() => ({
 
 const JournalListItem = ({name}) => {
 
-return (
-    <StyledContainer maxWidth="md">
-        <ListItemButton component={Link} to={name}>
-            <ImageListItem>
-                <img src='https://placehold.co/100x100' alt={name}/>
-            </ImageListItem>
-            <Container maxWidth="md">
-                <ListItemText>
-                    {name}
-                </ListItemText>
-            </Container>
-        </ListItemButton>
-        <CustomButton btnText={'delete'}/>
-    </StyledContainer>
+    return (
+        <StyledContainer maxWidth="md">
+            <ListItemButton component={Link} to={name}>
+                <ImageListItem>
+                    <img src='https://placehold.co/100x100' alt={name}/>
+                </ImageListItem>
+                <Container maxWidth="md">
+                    <ListItemText>
+                        {name}
+                    </ListItemText>
+                </Container>
+            </ListItemButton>
+            <CustomButton btnText={'delete'}/>
+        </StyledContainer>
     );
-}
+};
 
 export default JournalListItem;

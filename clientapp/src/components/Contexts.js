@@ -1,3 +1,3 @@
 import { createContext } from 'react';
 
-export const JournalInfoContext = createContext(null)
+export const JournalInfoContext = createContext(null);

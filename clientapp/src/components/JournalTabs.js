@@ -11,7 +11,7 @@ const location = {
     address: '1600 Amphitheatre Parkway, Mountain View, california.',
     lat: 37.42216,
     lng: -122.08427,
-}
+};
 
 const TabPanel = props => {
     const { children, value, index, ...other } = props;
@@ -25,13 +25,13 @@ const TabPanel = props => {
             {...other}
         >
             {value === index && (
-        <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
-        </Box>
-      )}
+                <Box sx={{ p: 3 }}>
+                    <Typography>{children}</Typography>
+                </Box>
+            )}
         </div>
-    )
-}
+    );
+};
 
 
 const JournalTabs = () => {
@@ -63,6 +63,6 @@ const JournalTabs = () => {
             </Box>
         </>
     );
-}
+};
 
 export default JournalTabs;
