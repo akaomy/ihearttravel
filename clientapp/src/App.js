@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import JournalListView from './components/JournalListView';
-import JournalInfo from './components/JournalInfo';
+import JournalTabs from './components/JournalTabs';
 
       
 function App() {
     const [journals, setJournals] = useState([]);
     const uniqueId = () => parseInt(Date.now() * Math.random()).toString();
     const router = createBrowserRouter([
-        { path: '/journals', element: <JournalListView data={journals} /> }
+        { path: '/journals', element: <JournalListView journals={journals} />}
     ]);
 
     const getJournals = () => {
@@ -29,19 +29,16 @@ function App() {
         getJournals();
     }, []);
 
-
+    // dynamic routes names for each journal
     journals.map((journal) => 
         router.routes.push({
             id: uniqueId(),
-            path: `${journal.journal_name}`,
-            element:  <JournalInfo journal={journal}/>,
+            path: `journals/${journal.journal_name}`,
+            element:  <JournalTabs journal={journal.journal_info} />,
         })
     );
     
-    journals.map((journal) => {
-        console.log('42', journal);
-    });
-
+    console.log(journals.map((journal) => {console.log('journal app.js',journal.journal_info)}))
     return (
         <>
             <h1>i heart my travel</h1>

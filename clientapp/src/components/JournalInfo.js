@@ -4,6 +4,7 @@ import { JournalInfoContext } from './Contexts';
 
 
 const JournalInfo = ({ info }) => {
+    console.log('JournalInfo', info);
     return (
         <>
             <h2>{info.journal_name}</h2>

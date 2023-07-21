@@ -11,14 +11,14 @@ const StyledContainer = styled(Container)(() => ({
     justifyContent: 'space-around'
 }));
 
-const JournalListView  = ({data}) => {
-    
+const JournalListView  = ({journals}) => {
+    // console.log(journals.map(i => console.log(i.journal_name)));
     return (
         <Container>
             <StyledContainer>
                 <CustomButton btnText={'+'}/>
             </StyledContainer>
-            {data.user.journals.map((i) => 
+            {journals.map((i) => 
                 <JournalListItem 
                     key={i.journal_name}
                     name={i.journal_name}

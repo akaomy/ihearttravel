@@ -16,17 +16,18 @@ const StyledContainer = styled(Container)(() => ({
 export default function TodoBoard () {
 
     const cardInfo = useContext(JournalInfoContext);
+    console.log(cardInfo);
 
     return (
         <StyledContainer>
             <CustomButton btnText={'+'}/>
             <Grid container spacing={4}>
-                {cardInfo.journal_info[0].todos.map(i => 
+                {cardInfo.map(i => 
                     <Grid item xs={12} sm={4} md={3}>
                         <TodoCard
                             key={i.card_id}
                             cardName={i.card_name}
-                            // cardContent={i.card_content}
+                            cardContent={i.card_name}
                         />
                     </Grid>
                 )}
