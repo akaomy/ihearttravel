@@ -36,7 +36,7 @@ const TabPanel = props => {
 const JournalTabs = ({ journalInfo }) => {
     const [value, setValue] = useState(0);
 
-    const handleChange = (newValue) => {
+    const handleChange = (e, newValue) => {
         setValue(newValue);
     };
 
