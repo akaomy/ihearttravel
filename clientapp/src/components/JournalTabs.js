@@ -6,7 +6,6 @@ import Typography from '@mui/material/Typography';
 import TodoBoard from './todo/TodoBoard';
 import Map from './map/Map';
 
-
 const location = {
     address: '1600 Amphitheatre Parkway, Mountain View, california.',
     lat: 37.42216,
@@ -34,7 +33,7 @@ const TabPanel = props => {
 };
 
 
-const JournalTabs = () => {
+const JournalTabs = ({ journalInfo }) => {
     const [value, setValue] = useState(0);
 
     const handleChange = (newValue) => {
@@ -51,13 +50,14 @@ const JournalTabs = () => {
                     <Tab label="Todo" />
                     <Tab label="Map" />
                 </Tabs>
-                <TabPanel value={value} index={0}>
-                    <TodoBoard/>
+                <TabPanel value={value} index={0} >
+                    <TodoBoard journalInfo={journalInfo} />
                 </TabPanel>
-                <TabPanel value={value} index={1}>
+                <TabPanel value={value} index={1} >
                     <Map 
                         location={location}
                         zoomLevel={17}
+                        journalInfo={journalInfo}
                     />
                 </TabPanel>
             </Box>

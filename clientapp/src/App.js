@@ -29,16 +29,17 @@ function App() {
         getJournals();
     }, []);
 
+    // add more paths to router
     // dynamic routes names for each journal
+    // and open each journal
     journals.map((journal) => 
         router.routes.push({
             id: uniqueId(),
             path: `journals/${journal.journal_name}`,
-            element:  <JournalTabs journal={journal.journal_info} />,
+            element:  <JournalTabs journalInfo={journal.journal_info} />,
         })
     );
-    
-    console.log(journals.map((journal) => {console.log('journal app.js',journal.journal_info)}))
+
     return (
         <>
             <h1>i heart my travel</h1>

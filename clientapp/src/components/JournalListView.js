@@ -12,7 +12,7 @@ const StyledContainer = styled(Container)(() => ({
 }));
 
 const JournalListView  = ({journals}) => {
-    // console.log(journals.map(i => console.log(i.journal_name)));
+
     return (
         <Container>
             <StyledContainer>

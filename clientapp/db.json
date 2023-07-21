@@ -8,52 +8,21 @@
                   {
                     "card_id": "98345mjk",
                     "card_name": "Camping Gear",
-                    "card_content": [
-                      {
-                        "done": "false",
-                        "item_name": "tent"
-                      },
-                      {
-                        "done": "false",
-                        "item_name": "mats"
-                      },
-                      {
-                        "done": "false",
-                        "item_name": "sleeping bags"
-                      }
-                    ],
+                    "card_content": "tent, mats, sleeping bag, pillows",
                     "card_copy": "false",
                     "card_delete": "false"
                   },
                   {
                     "card_id": "86sdf",
                     "card_name": "Clothes",
-                    "card_content": [
-                      {
-                        "done": "false",
-                        "item_name": "jackets"
-                      },
-                      {
-                        "done": "false",
-                        "item_name": "underwear"
-                      },
-                      {
-                        "done": "false",
-                        "item_name": "pants"
-                      }
-                    ],
+                    "card_content": "shirts, pants, hats, socks",
                     "card_copy": "false",
                     "card_delete": "false"
                   },
                   {
                     "card_id": "342gfdg",
                     "card_name": "Tickets",
-                    "card_content": [
-                      {
-                        "done": "false",
-                        "item_name": "link to the email with tickets to yousemite"
-                      }
-                    ],
+                    "card_content": "SF Airport August 23 2023",
                     "card_copy": "false",
                     "card_delete": "false"
                   }
@@ -81,16 +50,25 @@
               {
                 "todo": [
                   {
-                    "done": "true",
-                    "todo_item": "one"
+                    "card_id": "98345mjk",
+                    "card_name": "Camping Gear",
+                    "card_content": "tent, mats, sleeping bag, pillows",
+                    "card_copy": "false",
+                    "card_delete": "false"
                   },
                   {
-                    "done": "false",
-                    "todo_item": "two"
+                    "card_id": "86sdf",
+                    "card_name": "Clothes",
+                    "card_content": "shirts, pants, hats, socks",
+                    "card_copy": "false",
+                    "card_delete": "false"
                   },
                   {
-                    "done": "false",
-                    "todo_item": "three"
+                    "card_id": "342gfdg",
+                    "card_name": "Tickets",
+                    "card_content": "SF Airport August 23 2023",
+                    "card_copy": "false",
+                    "card_delete": "false"
                   }
                 ],
                 "map": [
@@ -116,16 +94,25 @@
               {
                 "todo": [
                   {
-                    "done": "true",
-                    "todo_item": "one"
+                    "card_id": "98345mjk",
+                    "card_name": "Camping Gear",
+                    "card_content": "tent, mats, sleeping bag, pillows",
+                    "card_copy": "false",
+                    "card_delete": "false"
                   },
                   {
-                    "done": "false",
-                    "todo_item": "two"
+                    "card_id": "86sdf",
+                    "card_name": "Clothes",
+                    "card_content": "shirts, pants, hats, socks",
+                    "card_copy": "false",
+                    "card_delete": "false"
                   },
                   {
-                    "done": "false",
-                    "todo_item": "three"
+                    "card_id": "342gfdg",
+                    "card_name": "Tickets",
+                    "card_content": "SF Airport August 23 2023",
+                    "card_copy": "false",
+                    "card_delete": "false"
                   }
                 ],
                 "map": [
