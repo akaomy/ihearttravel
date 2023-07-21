@@ -20,7 +20,14 @@ The goal for me when choosing this stack was to practice and deepen learned skil
 
 to run client:
 
-[see link here](https://github.com/akaomy/iheartmytravel/blob/main/clientapp/README.md)
+```cd client```
+```npm start```
+
+to run fake db with dummy data:
+
+```npm i -g json-server```
+```cd client```
+```json-server db.json --port 3030```
 
 ## How to use (features)
 
