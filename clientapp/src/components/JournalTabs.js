@@ -55,9 +55,9 @@ const JournalTabs = ({ journalInfo }) => {
                 </TabPanel>
                 <TabPanel value={value} index={1} >
                     <Map 
-                        location={location}
+                        // location={journalInfo.map} list of locations
+                        locations={location}
                         zoomLevel={17}
-                        journalInfo={journalInfo}
                     />
                 </TabPanel>
             </Box>
