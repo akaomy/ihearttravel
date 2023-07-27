@@ -29,15 +29,21 @@
                 ],
                 "map": [
                   {
-                    "location": "123 Street Name Region name",
+                    "address": "1600 Amphitheatre Parkway, Mountain View, california.",
+                    "lat": 37.42216,
+                    "lng": -122.08427,
                     "comments": "Nice place for my dogs to play"
                   },
                   {
-                    "location": "123 Street Name Region name",
+                    "address": "1600 Amphitheatre Parkway, Mountain View, california.",
+                    "lat": 37.42216,
+                    "lng": -122.08427,
                     "comments": "Nice place for my dogs to play"
                   },
                   {
-                    "location": "123 Street Name Region name",
+                    "address": "1600 Amphitheatre Parkway, Mountain View, california.",
+                    "lat": 37.42216,
+                    "lng": -122.08427,
                     "comments": "Nice place for my dogs to play"
                   }
                 ]
@@ -73,15 +79,21 @@
                 ],
                 "map": [
                   {
-                    "location": "123 Street Name Region name",
+                    "address": "1600 Amphitheatre Parkway, Mountain View, california.",
+                    "lat": 37.42216,
+                    "lng": -122.08427,
                     "comments": "Nice place for my dogs to play"
                   },
                   {
-                    "location": "123 Street Name Region name",
+                    "address": "1600 Amphitheatre Parkway, Mountain View, california.",
+                    "lat": 37.42216,
+                    "lng": -122.08427,
                     "comments": "Nice place for my dogs to play"
                   },
                   {
-                    "location": "123 Street Name Region name",
+                    "address": "1600 Amphitheatre Parkway, Mountain View, california.",
+                    "lat": 37.42216,
+                    "lng": -122.08427,
                     "comments": "Nice place for my dogs to play"
                   }
                 ]
@@ -117,15 +129,21 @@
                 ],
                 "map": [
                   {
-                    "location": "123 Street Name Region name",
+                    "address": "1600 Amphitheatre Parkway, Mountain View, california.",
+                    "lat": 37.42216,
+                    "lng": -122.08427,
                     "comments": "Nice place for my dogs to play"
                   },
                   {
-                    "location": "123 Street Name Region name",
+                    "address": "1600 Amphitheatre Parkway, Mountain View, california.",
+                    "lat": 37.42216,
+                    "lng": -122.08427,
                     "comments": "Nice place for my dogs to play"
                   },
                   {
-                    "location": "123 Street Name Region name",
+                    "address": "1600 Amphitheatre Parkway, Mountain View, california.",
+                    "lat": 37.42216,
+                    "lng": -122.08427,
                     "comments": "Nice place for my dogs to play"
                   }
                 ]
