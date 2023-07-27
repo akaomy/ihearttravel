@@ -1,5 +1,6 @@
 import React from 'react';
 import { ListItemButton, ListItemText, ImageListItem, Container } from '@mui/material';
+import Button from '@mui/material/Button';
 
 const MapLocationItem = () => {
     return (
@@ -12,6 +13,7 @@ const MapLocationItem = () => {
                     <ListItemText>
                         {'location name'}
                     </ListItemText>
+                    <Button size="small">Delete</Button>
                 </Container>
             </ListItemButton>
         </>
