@@ -12,14 +12,13 @@ const StyledContainer = styled(Container)(() => ({
     flexWrap: 'wrap',
 }));
 
-export default function TodoBoard ({ journalInfo }) {
-    const todosData = journalInfo[0].todos;
+export default function TodoBoard ({ journalInfoTodo }) {
 
     return (
         <StyledContainer>
             <CustomButton btnText={'+'}/>
             <Grid container spacing={4}>
-                {todosData.map(i => 
+                {journalInfoTodo.map(i => 
                     <Grid item xs={12} sm={4} md={3}>
                         <TodoCard
                             key={i.card_id}
