@@ -1,22 +1,31 @@
 import React from 'react';
 import GoogleMapReact from 'google-map-react';
 import LocationPin from './LocationPin';
-import './map.css'
+import SearchBar from '../uiReusables/SearchBar';
+import CustomButton from '../uiReusables/CustomButton';
+import './map.css';
 
-export default function Map({ location, zoomLevel }) {
+export default function Map({ locations, zoomLevel }) {
+    // location is an array of locations
+    // todo: 
+    // rename Map to MapBoard
+    // display list of locations with comments and buttons (delete, edit, copy) on the left
+    //
     return (
-      <div className="google-map">
-        <GoogleMapReact
-        bootstrapURLKeys={{ key: '' }}
-        defaultCenter={location}
-        defaultZoom={zoomLevel}
-      >
-        <LocationPin
-          lat={location.lat}
-          lng={location.lng}
-          text={location.address}
-        />
-      </GoogleMapReact>
-      </div>
+        <div className="google-map">
+            <SearchBar/>
+            <CustomButton btnText={'search'}/>
+            <GoogleMapReact
+                bootstrapURLKeys={{ key: '' }}
+                defaultCenter={locations}
+                defaultZoom={zoomLevel}
+            >
+                <LocationPin
+                    lat={locations.lat}
+                    lng={locations.lng}
+                    text={locations.address}
+                />
+            </GoogleMapReact>
+        </div>
     );
 }

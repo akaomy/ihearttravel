@@ -1,0 +1,155 @@
+{
+    "journals": [
+        {
+            "journal_name": "Eurotrip for 1 week, may 2021",
+            "journal_info": [
+              {
+                "todos": [
+                  {
+                    "card_id": "98345mjk",
+                    "card_name": "Camping Gear",
+                    "card_content": "tent, mats, sleeping bag, pillows",
+                    "card_copy": "false",
+                    "card_delete": "false"
+                  },
+                  {
+                    "card_id": "86sdf",
+                    "card_name": "Clothes",
+                    "card_content": "shirts, pants, hats, socks",
+                    "card_copy": "false",
+                    "card_delete": "false"
+                  },
+                  {
+                    "card_id": "342gfdg",
+                    "card_name": "Tickets",
+                    "card_content": "SF Airport August 23 2023",
+                    "card_copy": "false",
+                    "card_delete": "false"
+                  }
+                ],
+                "map": [
+                  {
+                    "address": "1600 Amphitheatre Parkway, Mountain View, california.",
+                    "lat": 37.42216,
+                    "lng": -122.08427,
+                    "comments": "Nice place for my dogs to play"
+                  },
+                  {
+                    "address": "1600 Amphitheatre Parkway, Mountain View, california.",
+                    "lat": 37.42216,
+                    "lng": -122.08427,
+                    "comments": "Nice place for my dogs to play"
+                  },
+                  {
+                    "address": "1600 Amphitheatre Parkway, Mountain View, california.",
+                    "lat": 37.42216,
+                    "lng": -122.08427,
+                    "comments": "Nice place for my dogs to play"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "journal_name": "Eurotrip for 2 week, may 2022",
+            "journal_info": [
+              {
+                "todo": [
+                  {
+                    "card_id": "98345mjk",
+                    "card_name": "Camping Gear",
+                    "card_content": "tent, mats, sleeping bag, pillows",
+                    "card_copy": "false",
+                    "card_delete": "false"
+                  },
+                  {
+                    "card_id": "86sdf",
+                    "card_name": "Clothes",
+                    "card_content": "shirts, pants, hats, socks",
+                    "card_copy": "false",
+                    "card_delete": "false"
+                  },
+                  {
+                    "card_id": "342gfdg",
+                    "card_name": "Tickets",
+                    "card_content": "SF Airport August 23 2023",
+                    "card_copy": "false",
+                    "card_delete": "false"
+                  }
+                ],
+                "map": [
+                  {
+                    "address": "1600 Amphitheatre Parkway, Mountain View, california.",
+                    "lat": 37.42216,
+                    "lng": -122.08427,
+                    "comments": "Nice place for my dogs to play"
+                  },
+                  {
+                    "address": "1600 Amphitheatre Parkway, Mountain View, california.",
+                    "lat": 37.42216,
+                    "lng": -122.08427,
+                    "comments": "Nice place for my dogs to play"
+                  },
+                  {
+                    "address": "1600 Amphitheatre Parkway, Mountain View, california.",
+                    "lat": 37.42216,
+                    "lng": -122.08427,
+                    "comments": "Nice place for my dogs to play"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "journal_name": "Eurotrip for 3 weeks, may 2023",
+            "journal_info": [
+              {
+                "todo": [
+                  {
+                    "card_id": "98345mjk",
+                    "card_name": "Camping Gear",
+                    "card_content": "tent, mats, sleeping bag, pillows",
+                    "card_copy": "false",
+                    "card_delete": "false"
+                  },
+                  {
+                    "card_id": "86sdf",
+                    "card_name": "Clothes",
+                    "card_content": "shirts, pants, hats, socks",
+                    "card_copy": "false",
+                    "card_delete": "false"
+                  },
+                  {
+                    "card_id": "342gfdg",
+                    "card_name": "Tickets",
+                    "card_content": "SF Airport August 23 2023",
+                    "card_copy": "false",
+                    "card_delete": "false"
+                  }
+                ],
+                "map": [
+                  {
+                    "address": "1600 Amphitheatre Parkway, Mountain View, california.",
+                    "lat": 37.42216,
+                    "lng": -122.08427,
+                    "comments": "Nice place for my dogs to play"
+                  },
+                  {
+                    "address": "1600 Amphitheatre Parkway, Mountain View, california.",
+                    "lat": 37.42216,
+                    "lng": -122.08427,
+                    "comments": "Nice place for my dogs to play"
+                  },
+                  {
+                    "address": "1600 Amphitheatre Parkway, Mountain View, california.",
+                    "lat": 37.42216,
+                    "lng": -122.08427,
+                    "comments": "Nice place for my dogs to play"
+                  }
+                ]
+              }
+            ]
+          }
+    ]
+}
+        
