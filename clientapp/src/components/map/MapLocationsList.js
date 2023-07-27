@@ -3,17 +3,17 @@ import MapLocationItem from './MapLocationItem';
 import {Container } from '@mui/material';
 
 
-const MapLocationsList = () => {
+const MapLocationsList = ({ locations }) => {
 
     return (
         <Container maxWidth='sm'>
-            <MapLocationItem />
-            <MapLocationItem />
-            <MapLocationItem />
-            <MapLocationItem />
-            <MapLocationItem />
-            <MapLocationItem />
-            <MapLocationItem />
+            <MapLocationItem locations={locations} />
+            <MapLocationItem locations={locations} />
+            <MapLocationItem locations={locations} />
+            <MapLocationItem locations={locations} />
+            <MapLocationItem locations={locations} />
+            <MapLocationItem locations={locations} />
+            <MapLocationItem locations={locations} />
         </Container>
     );
 };

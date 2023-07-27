@@ -38,7 +38,7 @@ export default function Map({ journalInfoMapLocations, locations, zoomLevel }) {
                 </GoogleMapReact>
 
             </Container>
-            <MapLocationsList />
+            <MapLocationsList locations={locations} />
         </StyledContainer>
     );
 }
