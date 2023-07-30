@@ -29,6 +29,8 @@ to run fake db with dummy data:
 ```cd client```
 ```json-server db.json --port 3030```
 
+to run backend:
+
 ## How to use (features)
 
 TBD
