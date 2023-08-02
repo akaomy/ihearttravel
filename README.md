@@ -21,6 +21,7 @@ The goal for me when choosing this stack was to practice and deepen learned skil
 to run client:
 
 ```cd client```
+```npm i```
 ```npm start```
 
 to run fake db with dummy data:
@@ -30,6 +31,10 @@ to run fake db with dummy data:
 ```json-server db.json --port 3030```
 
 to run backend:
+
+```cd backend```
+```npm i```
+```npm run start```
 
 ## How to use (features)
 
