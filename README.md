@@ -20,8 +20,8 @@ The goal for creating this project is to practice learned skills during my codin
 
 to run client:
 
-```cd client```
-```npm i```
+```cd client```  
+```npm i```  
 ```npm start```
 
 to run fake db with dummy data:
