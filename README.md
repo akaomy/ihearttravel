@@ -18,6 +18,9 @@ The goal for creating this project is to practice learned skills during my codin
 
 ## How to install and run the project
 
+on your computer in chose directory:
+```git clone https://github.com/akaomy/iheartmytravel.git```
+
 to run client:
 
 ```cd client```  
