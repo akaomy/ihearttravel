@@ -18,22 +18,24 @@ The goal for creating this project is to practice learned skills during my codin
 
 ## How to install and run the project
 
-on your computer in chose directory:
+1. on your computer in chose directory:
 ```git clone https://github.com/akaomy/iheartmytravel.git```
 
-to run client:
+2. to run client:
 
 ```cd client```  
 ```npm i```  
 ```npm start```
 
-to run fake db with dummy data:
+3. to run fake db with dummy data:
 
 ```npm i -g json-server```  
 ```cd client```  
 ```json-server db.json --port 3030```
 
-to run backend:
+OR
+
+3. to run backend:
 
 ```cd backend```  
 ```npm i```  
