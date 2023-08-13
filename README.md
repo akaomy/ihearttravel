@@ -10,7 +10,7 @@ the app allows a user to organize what needs to be done for an upcoming trip usi
 
 **front end**: React.js, MaterialUI
 
-**backend**: Python, Flask
+**backend**: Node.js, Express.js
 
 **database**: PostgresQL, SQLAlchemy
 
