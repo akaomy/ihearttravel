@@ -14,7 +14,7 @@ the app allows a user to organize what needs to be done for an upcoming trip usi
 
 **database**: PostgresQL, Sequelize
 
-The goal for me when choosing this stack was to practice and deepen learned skills during my coding bootcamp time at Hackbright
+The goal for creating this project is to practice learned skills during my coding Hackbright bootcamp and learn how create backend using Node.js
 
 ## How to install and run the project
 
