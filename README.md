@@ -12,7 +12,7 @@ the app allows a user to organize what needs to be done for an upcoming trip usi
 
 **backend**: Node.js, Express.js
 
-**database**: PostgresQL, SQLAlchemy
+**database**: PostgresQL, Sequelize
 
 The goal for me when choosing this stack was to practice and deepen learned skills during my coding bootcamp time at Hackbright
 
