@@ -26,14 +26,14 @@ to run client:
 
 to run fake db with dummy data:
 
-```npm i -g json-server```
-```cd client```
+```npm i -g json-server```  
+```cd client```  
 ```json-server db.json --port 3030```
 
 to run backend:
 
-```cd backend```
-```npm i```
+```cd backend```  
+```npm i```  
 ```npm run start```
 
 ## How to use (features)
