@@ -1,24 +1,28 @@
 'use strict';
-const {
-  Model
-} = require('sequelize');
-module.exports = (sequelize, DataTypes) => {
-  class Journal extends Model {
-    /**
-     * Helper method for defining associations.
-     * This method is not a part of Sequelize lifecycle.
-     * The `models/index` file will call this method automatically.
-     */
-    static associate(models) {
-      // define association here
-    }
+
+module.exports = {
+  async up(queryInterface, Sequelize) {
+    await queryInterface.createTable("Journal", {
+      JournalId: {
+        allowNull: false,
+        autoIncrement: true,
+        primaryKey: true,
+        type: Sequelize.INTEGER
+      },
+      JournalName: {
+        type: Sequelize.STRING
+      },
+      createdAt: {
+        allowNull: false,
+        type: Sequelize.DATE
+      },
+      updatedAt: {
+        allowNull: false,
+        type: Sequelize.DATE
+      }
+    });
+  },
+  async down(queryInterface, Sequelize) {
+    await queryInterface.dropTable("Journal");
   }
-  Journal.init({
-    JournalId: DataTypes.STRING,
-    JournalName: DataTypes.STRING
-  }, {
-    sequelize,
-    modelName: 'Journal',
-  });
-  return Journal;
 };
