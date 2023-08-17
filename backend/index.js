@@ -10,8 +10,19 @@ models.sequelize.sync().then(function () {
     console.log(" > there was an issue in synchronizing the database", err);
 });
 
-app.get('/journals', (req, res) => {
-    res.send('it works with express');
+app.get('/journals', async (req, res) => {
+    const journals = await models.Journal.findAll();
+    res.send(JSON.stringify(journals, undefined, 4));
+});
+
+app.get('/journal-map-places', async (req, res) => {
+    const journalMapPlaces = await models.JournalMapPlaces.findAll();
+    res.send(JSON.stringify(journalMapPlaces, undefined, 4));
+});
+
+app.get('/journal-todo-cards', async (req, res) => {
+    const journalTodoCard = await models.JournalTodoCard.findAll();
+    res.send(JSON.stringify(journalTodoCard, undefined, 4));
 });
 
 app.listen(process.env.DEV_PORT, (err) => {
