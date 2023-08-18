@@ -1,7 +1,8 @@
 const express = require("express");
 const app = express();
 const models = require("./models");
-require('dotenv').config();
+const cors = require("cors");
+require("dotenv").config();
 
 
 models.sequelize.sync().then(function () {
