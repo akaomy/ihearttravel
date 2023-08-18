@@ -17,6 +17,10 @@ app.use(cors({
     credentials: true
 }));
 
+app.get('/', async (req, res) => {
+    res.send('Login page goes here');
+});
+
 app.get('/journals', async (req, res) => {
     const journals = await models.Journal.findAll();
     res.send(JSON.stringify(journals, undefined, 4));
