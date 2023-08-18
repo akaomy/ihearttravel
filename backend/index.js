@@ -12,7 +12,7 @@ models.sequelize.sync().then(function () {
 });
 
 app.use(cors({
-    origin: 'http://localhost:3000/journals/',
+    origin: 'http://localhost:3000',
     methods: 'GET, POST',
     credentials: true
 }));
