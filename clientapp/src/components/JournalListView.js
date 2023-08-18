@@ -18,10 +18,10 @@ const JournalListView  = ({journals}) => {
             <StyledContainer>
                 <CustomButton btnText={'+'}/>
             </StyledContainer>
-            {journals.map((i) => 
+            {journals.map((journal, index) => 
                 <JournalListItem 
-                    key={i.journal_name}
-                    name={i.journal_name}
+                    key={index}
+                    name={journal.JournalName}
                 />
             )}
         </Container>
