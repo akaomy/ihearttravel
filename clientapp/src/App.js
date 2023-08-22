@@ -28,15 +28,16 @@ function App() {
     useEffect(() => {
         getJournals();
     }, []);
+    console.log(journals)
 
     // add more paths to router
     // dynamic routes names for each journal
     // and open each journal
     journals.map((journal) => 
         router.routes.push({
-            id: uniqueId(),
-            path: `journals/${journal.journal_name}`,
-            element:  <JournalTabs journalInfo={journal.journal_info} />,
+            id: journal.id,
+            path: `journals/${journal.JournalName}`,
+            element:  <JournalTabs journalInfo={journal} />,
         })
     );
 
