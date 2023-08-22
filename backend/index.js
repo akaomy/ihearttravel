@@ -26,13 +26,13 @@ app.get('/journals', async (req, res) => {
     res.send(JSON.stringify(journals, undefined, 4));
 });
 
-// app.get('/journals:id', async function (req, res) {
-//     let journal = await models.Journal.findByPk(req.params.id);
-//     if (!journal) {
-//         return res.sendStatus(404);
-//     }
-//     res.send("<pre>" + JSON.stringify(journal, undefined, 4) + "<pre/>");
-// });
+app.get('/journals/:id', async function (req, res) {
+    let journal = await models.Journal.findByPk(req.params.id);
+    if (!journal) {
+        return res.sendStatus(404);
+    }
+    res.send("<pre>" + JSON.stringify(journal, undefined, 4) + "<pre/>");
+});
 
 // app.get('/journal-map-places', async (req, res) => {
 //     const journalMapPlaces = await models.JournalMapPlaces.findAll();
