@@ -2,7 +2,7 @@
 import React from 'react';
 import { ListItemButton, ListItemText, ImageListItem, Container } from '@mui/material';
 import { Link } from 'react-router-dom';
-import CustomButton from './uiReusables/CustomButton';
+import JournalButton from './uiReusables/JournalButton';
 import { styled } from '@mui/material/styles';
 
 
@@ -24,7 +24,7 @@ const JournalListItem = ({name}) => {
                     </ListItemText>
                 </Container>
             </ListItemButton>
-            <CustomButton btnText={'delete'}/>
+            <JournalButton btntext={'delete'}/>
         </StyledContainer>
     );
 };
