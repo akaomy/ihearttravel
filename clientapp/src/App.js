@@ -3,11 +3,11 @@ import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import JournalListView from './components/JournalListView';
 import JournalTabs from './components/JournalTabs';
+import { strings } from './strings';
 
       
 function App() {
     const [journals, setJournals] = useState([]);
-    const uniqueId = () => parseInt(Date.now() * Math.random()).toString();
     const router = createBrowserRouter([
         { path: '/journals', element: <JournalListView journals={journals} />}
     ]);
@@ -43,7 +43,7 @@ function App() {
 
     return (
         <>
-            <h1>i heart my travel</h1>
+            <h1>{strings.appLogo}</h1>
             <RouterProvider router={router}/>
         </>
     );
