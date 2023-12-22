@@ -13,7 +13,8 @@ function App() {
     ]);
 
     const getJournals = () => {
-        fetch('http://localhost:3030/journals', {
+        // http://localhost:3030/journals for mock data server
+        fetch('http://localhost:4400/journals', {
             method: 'GET',
         })
             .then(response => {
