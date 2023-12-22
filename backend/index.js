@@ -23,7 +23,7 @@ app.get('/', async (req, res) => {
 
 app.get('/journals', async (req, res) => {
     const journals = await models.Journal.findAll();
-    res.send(JSON.stringify(journals, undefined, 4));
+    res.send("<pre>" + JSON.stringify(journals, undefined, 4) + "<pre/>");
 });
 
 app.get('/journals/:id', async function (req, res) {
