@@ -23,7 +23,7 @@ app.get('/', async (req, res) => {
 
 app.get('/journals', async (req, res) => {
     const journals = await models.Journal.findAll();
-    res.send("<pre>" + JSON.stringify(journals, undefined, 4) + "<pre/>");
+    res.send(JSON.stringify(journals, undefined, 4));
 });
 
 app.get('/journals/:id', async function (req, res) {
@@ -31,7 +31,7 @@ app.get('/journals/:id', async function (req, res) {
     if (!journal) {
         return res.sendStatus(404);
     }
-    res.send("<pre>" + JSON.stringify(journal, undefined, 4) + "<pre/>");
+    res.send(JSON.stringify(journal, undefined, 4));
 });
 
 // todo:
