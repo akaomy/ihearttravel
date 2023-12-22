@@ -42,6 +42,7 @@ const JournalTabs = ({ journalInfo }) => {
 
     return (
         <>
+        <h1>{journalInfo.JournalName}</h1>
             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
                 <Tabs 
                     value={value} 
@@ -51,7 +52,7 @@ const JournalTabs = ({ journalInfo }) => {
                     <Tab label="Map" />
                 </Tabs>
                 <TabPanel value={value} index={0} >
-                    <TodoBoard journalInfo={journalInfo} />
+                    {/* <TodoBoard journalInfo={journalInfo} /> */}
                 </TabPanel>
                 <TabPanel value={value} index={1} >
                     <Map 
