@@ -10,30 +10,35 @@ the app allows a user to organize what needs to be done for an upcoming trip usi
 
 **front end**: React.js, MaterialUI
 
-**backend**: Python, Flask
+**backend**: Node.js, Express.js
 
-**database**: PostgresQL, SQLAlchemy
+**database**: PostgresQL, Sequelize
 
-The goal for me when choosing this stack was to practice and deepen learned skills during my coding bootcamp time at Hackbright
+The goal for creating this project is to practice learned skills during my coding Hackbright bootcamp and learn how create backend using Node.js
 
 ## How to install and run the project
 
-to run client:
+1. on your computer in chosen directory:
+```git clone https://github.com/akaomy/iheartmytravel.git```
 
-```cd client```
-```npm i```
+2. to run client:
+
+```cd client```  
+```npm i```  
 ```npm start```
 
-to run fake db with dummy data:
+3. to run fake db with dummy data:
 
-```npm i -g json-server```
-```cd client```
+```npm i -g json-server```  
+```cd client```  
 ```json-server db.json --port 3030```
 
-to run backend:
+OR
 
-```cd backend```
-```npm i```
+3. to run backend:
+
+```cd backend```  
+```npm i```  
 ```npm run start```
 
 ## How to use (features)
