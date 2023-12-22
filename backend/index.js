@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
 const models = require("./models");
-const hostname = '127.0.0.1';
-const port = 4000;
+require('dotenv').config();
+
 
 models.sequelize.sync().then(function () {
     console.log("> database has been synced");
@@ -14,9 +14,9 @@ app.get('/journals', (req, res) => {
     res.send('it works with express');
 });
 
-app.listen(port, (err) => {
+app.listen(process.env.DEV_PORT, (err) => {
     if (!err)
-        console.log(`Server is running at http://${hostname}:${port}/`);
+        console.log(`Server is running at http://${process.env.HOST_NAME}:${process.env.DEV_PORT}/`);
     else
         console.log("Error occured. Server is not running", err);
 }); 
