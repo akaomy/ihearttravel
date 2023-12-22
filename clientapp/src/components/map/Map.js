@@ -2,7 +2,7 @@ import React from 'react';
 import GoogleMapReact from 'google-map-react';
 import LocationPin from './LocationPin';
 import SearchBar from '../uiReusables/SearchBar';
-import CustomButton from '../uiReusables/CustomButton';
+import JournalButton from '../uiReusables/JournalButton';
 import './map.css';
 
 export default function Map({ locations, zoomLevel }) {
@@ -14,7 +14,7 @@ export default function Map({ locations, zoomLevel }) {
     return (
         <div className="google-map">
             <SearchBar/>
-            <CustomButton btnText={'search'}/>
+            <JournalButton btntext={'search'}/>
             <GoogleMapReact
                 bootstrapURLKeys={{ key: '' }}
                 defaultCenter={locations}

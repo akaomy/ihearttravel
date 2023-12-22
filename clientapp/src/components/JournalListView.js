@@ -1,7 +1,7 @@
 
 import React from 'react';
 import JournalListItem from './JournalListItem';
-import CustomButton from './uiReusables/CustomButton';
+import JournalDialog from './uiReusables/JournalDialog';
 import { Container } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
@@ -16,7 +16,7 @@ const JournalListView  = ({journals}) => {
     return (
         <Container>
             <StyledContainer>
-                <CustomButton btnText={'+'}/>
+                <JournalDialog/>
             </StyledContainer>
             {journals.map((journal, index) => 
                 <JournalListItem 

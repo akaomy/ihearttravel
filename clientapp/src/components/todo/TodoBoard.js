@@ -1,7 +1,7 @@
 import React from 'react';
 import TodoCard from './TodoCard';
 import Grid from '@mui/material/Grid';
-import CustomButton from '../uiReusables/CustomButton';
+import JournalButton from '../uiReusables/JournalButton';
 import Container from '@mui/material/Container';
 import { styled } from '@mui/material/styles';
 
@@ -17,7 +17,7 @@ export default function TodoBoard ({ journalInfo }) {
 
     return (
         <StyledContainer>
-            <CustomButton btnText={'+'}/>
+            <JournalButton btnText={'+'}/>
             <Grid container spacing={4}>
                 {todosData.map(i => 
                     <Grid item xs={12} sm={4} md={3}>
