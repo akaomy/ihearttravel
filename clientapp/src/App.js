@@ -12,6 +12,7 @@ function App() {
         { path: '/journals', element: <JournalListView journals={journals} />}
     ]);
 
+    // is int't it suppose to be in a separate file?
     const getJournals = () => {
         // http://localhost:3030/journals for mock data server
         fetch('http://localhost:4400/journals', {
@@ -29,7 +30,6 @@ function App() {
     useEffect(() => {
         getJournals();
     }, []);
-    console.log(journals)
 
     // add more paths to router
     // dynamic routes names for each journal
@@ -42,6 +42,13 @@ function App() {
         })
     );
 
+    // add new route for creating a new journal to send it to the backend
+    router.routes.push({
+        id: '123',
+        path: '/journals/create',
+        element:  <p>test</p>,
+    })
+    
     return (
         <>
             <h1>{strings.appLogo}</h1>

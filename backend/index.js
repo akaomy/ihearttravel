@@ -35,17 +35,17 @@ app.get('/journals/:id', async function (req, res) {
 });
 
 // todo:
-// app.get('/journals/create', async function (req, res) {
-//     try {
-//         let journal = await models.Journal.create({
-//         //how to get this data from the front end form?
-//         });
-//         res.status(201).json(journal);
-//     } catch (err) {
-//             console.log(err);
-//             res.status(500).json({err: 'An error occured while creating new record'});
-//     }
-// });
+app.get('/journals/create', async function (req, res) {
+    try {
+        let journal = await models.Journal.create({
+        //how to get this data from the front end form?
+        });
+        res.status(201).json(journal);
+    } catch (err) {
+            console.log(err);
+            res.status(500).json({err: 'An error occured while creating new record'});
+    }
+});
 
 // app.get('/journal-map-places', async (req, res) => {
 //     const journalMapPlaces = await models.JournalMapPlaces.findAll();
