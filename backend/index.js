@@ -1,65 +1,29 @@
-const express = require("express");
-const app = express();
-const models = require("./models");
-const cors = require("cors");
-require("dotenv").config();
+#!/usr/bin/env node
 
+const port = (process.argv[2] || process.env.PORT || 4100);
+const http = require('http');
 
-models.sequelize.sync().then(function () {
-    console.log("> database has been synced");
-    }).catch(function (err) {
-    console.log(" > there was an issue in synchronizing the database", err);
-});
+http.createServer((req, res) => {
+  console.dir(req.url);
+  console.dir(req.headers);
+  console.dir(req.statusCode);
+  console.dir(req.statusMessage);
+  const nameArg = capitalize(req.url.replace(/[^\w.,-]/g, ' ')
+      .replace(/\s+/g, ' ').trim() || 'world');
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/html');
+  res.end(`<p>Hello ${nameArg}!</p>`);
+}).listen(port);
 
-app.use(cors({
-    origin: 'http://localhost:3000',
-    methods: 'GET, POST',
-    credentials: true
-}));
+console.log(`Server running at http://localhost:${port}/`);
 
-app.get('/', async (req, res) => {
-    res.send('Login page goes here');
-});
-
-app.get('/journals', async (req, res) => {
-    const journals = await models.Journal.findAll();
-    res.send(JSON.stringify(journals, undefined, 4));
-});
-
-app.get('/journals/:id', async function (req, res) {
-    let journal = await models.Journal.findByPk(req.params.id);
-    if (!journal) {
-        return res.sendStatus(404);
-    }
-    res.send(JSON.stringify(journal, undefined, 4));
-});
-
-// todo:
-// app.get('/journals/create', async function (req, res) {
-//     try {
-//         let journal = await models.Journal.create({
-//         //how to get this data from the front end form?
-//         });
-//         res.status(201).json(journal);
-//     } catch (err) {
-//             console.log(err);
-//             res.status(500).json({err: 'An error occured while creating new record'});
-//     }
-// });
-
-// app.get('/journal-map-places', async (req, res) => {
-//     const journalMapPlaces = await models.JournalMapPlaces.findAll();
-//     res.send(JSON.stringify(journalMapPlaces, undefined, 4));
-// });
-
-// app.get('/journal-todo-cards', async (req, res) => {
-//     const journalTodoCard = await models.JournalTodoCard.findAll();
-//     res.send(JSON.stringify(journalTodoCard, undefined, 4));
-// });
-
-app.listen(process.env.DEV_PORT, (err) => {
-    if (!err)
-        console.log(`Server is running at http://${process.env.HOST_NAME}:${process.env.DEV_PORT}/`);
-    else
-        console.log("Error occured. Server is not running", err);
-}); 
+/**
+ * capitalizes each word in a passes string
+ *
+ * @param {String} str - given string
+ * @return {String} - string with capitalizes first letters
+ */
+function capitalize(str) {
+  return str.trim().toLowerCase().split(' ')
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+}
