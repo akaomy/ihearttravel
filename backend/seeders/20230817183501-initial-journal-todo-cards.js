@@ -4,23 +4,23 @@
 module.exports = {
   async up (queryInterface, Sequelize) {
     await queryInterface.bulkInsert('JournalMapPlaces', [{
-      JournalMapPlacesLat: 'Musée Carnavalet',
+      JournalMapPlacesLat: '48.8571',
       JournalMapPlacesLngt: '2.3629',
-      JournalMapPlacesComment: '48.8571',
+      JournalMapPlacesComment: 'Musée Carnavalet',
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
-      JournalMapPlacesLat: 'Le Paname Art Café',
+      JournalMapPlacesLat: '48.5678',
       JournalMapPlacesLngt: '2.1234',
-      JournalMapPlacesComment: '48.5678',
+      JournalMapPlacesComment: 'Le Paname Art Café',
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
-      JournalMapPlacesLat: 'Louvre Museum',
+      JournalMapPlacesLat: '47.980709',
       JournalMapPlacesLngt: '2.3376',
-      JournalMapPlacesComment: '48.8606',
+      JournalMapPlacesComment: 'Louvre Museum',
       createdAt: new Date(),
       updatedAt: new Date()
     }], {});
