@@ -15,8 +15,8 @@ module.exports = (sequelize, DataTypes) => {
   }
   Journal.init({
     JournalName: DataTypes.STRING,
-    createdAt: new Date(),
-    updatedAt: new Date()
+    createdAt: { type: DataTypes.DATE, defaultValue: DataTypes.NOW },
+    updatedAt: { type: DataTypes.DATE, defaultValue: DataTypes.NOW },
   }, {
     sequelize,
     modelName: 'Journal',
