@@ -2,9 +2,12 @@ const express = require("express");
 const app = express();
 const models = require("./models");
 const cors = require("cors");
+const bodyParser = require('body-parser');
 require("dotenv").config();
 
-
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+app.use(cors());
 models.sequelize.sync().then(function () {
     console.log("> database has been synced");
     }).catch(function (err) {
@@ -34,11 +37,10 @@ app.get('/journals/:id', async function (req, res) {
     res.send(JSON.stringify(journal, undefined, 4));
 });
 
-// todo:
-app.get('/journals/create', async function (req, res) {
+app.post('/journals/create', async function (req, res) {
     try {
-        let journal = await models.Journal.create({
-        //how to get this data from the front end form?
+        const journal = await models.Journal.create({
+        JournalName: req.body.JournalName,
         });
         res.status(201).json(journal);
     } catch (err) {
@@ -46,16 +48,6 @@ app.get('/journals/create', async function (req, res) {
             res.status(500).json({err: 'An error occured while creating new record'});
     }
 });
-
-// app.get('/journal-map-places', async (req, res) => {
-//     const journalMapPlaces = await models.JournalMapPlaces.findAll();
-//     res.send(JSON.stringify(journalMapPlaces, undefined, 4));
-// });
-
-// app.get('/journal-todo-cards', async (req, res) => {
-//     const journalTodoCard = await models.JournalTodoCard.findAll();
-//     res.send(JSON.stringify(journalTodoCard, undefined, 4));
-// });
 
 app.listen(process.env.DEV_PORT, (err) => {
     if (!err)

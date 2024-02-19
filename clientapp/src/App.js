@@ -3,13 +3,15 @@ import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import JournalListView from './components/JournalListView';
 import JournalTabs from './components/JournalTabs';
+import JournalDialog from './components/uiReusables/JournalDialog';
 import { strings } from './strings';
 
       
 function App() {
     const [journals, setJournals] = useState([]);
     const router = createBrowserRouter([
-        { path: '/journals', element: <JournalListView journals={journals} />}
+        { path: '/journals', element: <JournalListView journals={journals} />},
+        { path: '/journals/create', element: <JournalDialog />}
     ]);
 
     // is int't it suppose to be in a separate file?
@@ -41,13 +43,6 @@ function App() {
             element:  <JournalTabs journalInfo={journal} />,
         })
     );
-
-    // add new route for creating a new journal to send it to the backend
-    router.routes.push({
-        id: '123',
-        path: '/journals/create',
-        element:  <p>test</p>,
-    })
     
     return (
         <>
