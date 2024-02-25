@@ -49,6 +49,10 @@ app.post('/journals/create', async function (req, res) {
     }
 });
 
+// TODO: delete a journal
+
+// TODO: update a journal name
+
 app.listen(process.env.DEV_PORT, (err) => {
     if (!err)
         console.log(`Server is running at http://${process.env.HOST_NAME}:${process.env.DEV_PORT}/`);
