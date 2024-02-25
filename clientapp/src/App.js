@@ -18,6 +18,7 @@ function App() {
     const getJournals = () => {
         // http://localhost:3030/journals for mock data server
         fetch('http://localhost:4400/journals', {
+            
             method: 'GET',
         })
             .then(response => {
@@ -39,7 +40,7 @@ function App() {
     journals.map((journal) => 
         router.routes.push({
             id: journal.id,
-            path: `journals/${journal.JournalName}`,
+            path: `journals/:JournalName`,
             element:  <JournalTabs journalInfo={journal} />,
         })
     );
