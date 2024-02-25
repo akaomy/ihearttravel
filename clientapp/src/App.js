@@ -40,6 +40,7 @@ function App() {
     journals.map((journal) => 
         router.routes.push({
             id: journal.id,
+            key: `journals/${journal.id}`,
             path: `journals/:JournalName`,
             element:  <JournalTabs journalInfo={journal} />,
         })
